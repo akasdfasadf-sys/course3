@@ -14,7 +14,7 @@
           <span class="text-blue-100">Bilim Merkezi</span>
         </h1>
         <p class="text-blue-100 text-base md:text-xl max-w-2xl mx-auto">
-          Täze pikir, Täze çözgüt, Täze durmuş!
+          Biziň bilen, Täze pikir, Täze çözgüt, Täze durmuş!
         </p>
       </div>
     </section>
@@ -82,17 +82,7 @@
       </div>
     </section>
 
-    <!-- Ugurlarymyz -->
-    <section class="py-12 md:py-20 bg-gradient-to-b from-slate-50 to-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 md:mb-14">
-          <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3">Ugurlarymyz</h2>
-          <p class="text-gray-600 max-w-xl mx-auto">Dürli ugurlarda hünär kurslarymyz bilen bilim alyň</p>
-        </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
-        </div>
-      </div>
-    </section>
+   
 
     <!-- Aýratynlyklarymyz -->
     <section class="py-12 md:py-20 bg-white">

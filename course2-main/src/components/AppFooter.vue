@@ -8,7 +8,7 @@
           <div class="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-2 rounded-xl shadow-lg shadow-blue-900/40">
             <BookOpen class="w-5 h-5" />
           </div>
-          <span class="text-lg font-bold text-white">Goshmacha We Uznuksiz Bilim Merkezi</span>
+          <span class="text-lg font-bold text-white">Goşmaça we Üznüksiz Bilim Merkezi</span>
         </div>
         <div class="flex items-center gap-3">
           <!-- Jaň -->
@@ -46,8 +46,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
         <div>
-          <p class="text-sm text-gray-500 leading-relaxed mb-3">{{ t('footer.desc') }}</p>
-          <p class="text-xs text-gray-600 leading-relaxed">{{ t('footer.desc2') }}</p>
+          <p class="text-sm text-gray-500 leading-relaxed mb-3">{{ t('Bilim platformasy') }}</p>
+         
         </div>
         <div>
           <h3 class="text-white font-bold text-xs uppercase tracking-widest mb-5">{{ t('footer.links') }}</h3>
@@ -63,15 +63,15 @@
             <li>
               <a href="tel:+99364716128" class="flex items-center gap-2.5 hover:text-white transition-colors">
                 <Phone class="w-4 h-4 text-green-500 flex-shrink-0" />
-                <span class="text-sm">+993 64 716128</span>
+                <span class="text-sm">+993 64 716128 , +993 61 468915</span>
               </a>
             </li>
             <li>
-              <a href="mailto:akasadfasadf@gmail.com" class="flex items-center gap-2.5 hover:text-white transition-colors">
+              <a href="mailto:sopyyevnepes@gmail.com" class="flex items-center gap-2.5 hover:text-white transition-colors">
                 <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
                   <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" fill="#EA4335"/>
                 </svg>
-                <span class="text-sm">akasadfasadf@gmail.com</span>
+                <span class="text-sm">sopyyevnepes@gmail.com</span>
               </a>
             </li>
             <li class="flex items-center gap-2.5">

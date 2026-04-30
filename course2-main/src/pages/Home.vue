@@ -21,8 +21,7 @@
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
       <div v-bm-reveal:left class="flex items-center justify-between mb-5 md:mb-8">
         <div>
-          <h2 class="text-xl md:text-3xl font-extrabold text-gray-900 tracking-tight">{{ t('home.featured') }}</h2>
-          <p class="text-sm md:text-base text-gray-600 mt-1 md:mt-2">{{ t('home.featured_sub') }}</p>
+          <p class="text-sm md:text-base text-gray-700 mt-1 md:mt-2">{{ t('home.featured_sub') }}</p>
         </div>
         <RouterLink to="/courses"
           class="text-blue-600 font-semibold hover:text-blue-700 flex items-center gap-1 text-sm md:text-base whitespace-nowrap transition-colors group">
