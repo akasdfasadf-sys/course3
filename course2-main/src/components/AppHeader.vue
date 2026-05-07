@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between h-14 md:h-[4.25rem]">
 
         <!-- Logo -->
-        <RouterLink to="/home" class="flex items-center gap-2.5 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2">
+        <RouterLink to="/" class="flex items-center gap-2.5 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2">
           <div class="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-1.5 md:p-2 rounded-xl shadow-md shadow-blue-600/25 transition-transform duration-300 hover:scale-[1.03]">
             <BookOpen class="w-5 h-5 md:w-6 md:h-6" />
           </div>
@@ -55,6 +55,20 @@
             <span class="font-medium truncate max-w-[10rem]">{{ auth.user.value?.firstName }} {{ auth.user.value?.lastName }}</span>
           </RouterLink>
 
+          <!-- Giriş -->
+          <RouterLink to="/login"
+            class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-all duration-200">
+            <LogIn class="w-4 h-4" />
+            <span>{{ t('auth.login') }}</span>
+          </RouterLink>
+
+          <!-- Hasaba alyň -->
+          <RouterLink to="/register"
+            class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sm font-semibold bg-blue-600 text-white hover:bg-blue-700 transition-all duration-200 shadow-sm shadow-blue-600/25">
+            <UserPlus class="w-4 h-4" />
+            <span>{{ t('auth.register') }}</span>
+          </RouterLink>
+
           <!-- Çykyş -->
           <button type="button" @click="handleLogout"
             class="p-2.5 rounded-xl text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-all duration-200 active:scale-95" title="Çykyş">
@@ -82,6 +96,18 @@
             <component :is="item.icon" class="w-5 h-5 opacity-80" />
             {{ item.label }}
           </RouterLink>
+          <div class="border-t border-gray-100 pt-3 mt-2 space-y-1">
+            <RouterLink to="/login" @click="menuOpen = false"
+              class="flex items-center gap-3 px-4 py-3.5 rounded-xl text-gray-700 font-medium hover:bg-gray-50 transition-all duration-200">
+              <LogIn class="w-5 h-5 opacity-80" />
+              {{ t('auth.login') }}
+            </RouterLink>
+            <RouterLink to="/register" @click="menuOpen = false"
+              class="flex items-center gap-3 px-4 py-3.5 rounded-xl text-white font-medium bg-blue-600 hover:bg-blue-700 transition-all duration-200">
+              <UserPlus class="w-5 h-5 opacity-80" />
+              {{ t('auth.register') }}
+            </RouterLink>
+          </div>
           <div class="border-t border-gray-100 pt-3 mt-2 px-4">
             <p class="text-xs text-gray-500 mb-2 font-medium">Dil saýla</p>
             <div class="flex gap-2">
@@ -105,7 +131,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { BookOpen, User, LogOut, Menu, X, Home, GraduationCap, LayoutGrid } from 'lucide-vue-next'
+import { BookOpen, User, LogOut, LogIn, UserPlus, Menu, X, Home, GraduationCap, LayoutGrid } from 'lucide-vue-next'
 import { useAuth } from '../stores/auth'
 import FlagTM from './flags/FlagTM.vue'
 import FlagRU from './flags/FlagRU.vue'
@@ -134,7 +160,7 @@ function setLang(code) {
 }
 
 const navItems = computed(() => [
-  { to: '/home', label: t('nav.home'), match: 'exact', icon: Home },
+  { to: '/', label: t('nav.home'), match: 'exact', icon: Home },
   { to: '/about', label: t('nav.about'), match: 'exact', icon: BookOpen },
   { to: '/courses', label: t('nav.courses'), match: 'courses', icon: LayoutGrid },
   { to: '/my-learning', label: t('nav.myLearning'), match: 'exact', icon: GraduationCap },

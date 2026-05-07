@@ -102,7 +102,5 @@ const footerLinks = [
   { to: '/', key: 'nav.home' },
   { to: '/about', key: 'nav.about' },
   { to: '/courses', key: 'nav.courses' },
-  { to: '/login', key: 'auth.login' },
-  { to: '/register', key: 'auth.register' },
 ]
 </script>

@@ -76,9 +76,7 @@ async function handleSubmit() {
   loading.value = true
   const result = await auth.login(email.value, password.value)
   if (result.ok) {
-    router.push('/home')
-  } else {
-    error.value = result.message || 'E-poçta ýa-da parol nädogry'
+    router.push('/')
   }
   loading.value = false
 }

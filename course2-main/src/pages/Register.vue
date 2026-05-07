@@ -166,9 +166,7 @@ async function handleSubmit() {
   const { confirmPassword, password, ...userData } = form.value
   const result = await auth.register({ ...userData, password })
   if (result.ok) {
-    router.push('/home')
-  } else {
-    error.value = result.message || 'Ýalňyşlyk ýüze çykdy'
+    router.push('/')
   }
   loading.value = false
 }
